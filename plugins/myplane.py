@@ -37,10 +37,10 @@ async def start(client, message):
             uploadlimit(message.from_user.id, 1288490188)
             usertype(message.from_user.id, "Free")
     if ends == None:
-        text = f"User ID:- ```{message.from_user.id}```\nPlan :- {user}\nDaly Upload Limit :- {humanbytes(limit)}\nToday Used :- {humanbytes(used)}\nRemain:- {humanbytes(remain)}"
+        text = f"User ID:- `{message.from_user.id}`\nPlan :- {user}\nDaly Upload Limit :- {humanbytes(limit)}\nToday Used :- {humanbytes(used)}\nRemain:- {humanbytes(remain)}"
     else:
         normal_date = datetime.fromtimestamp(ends).strftime('%Y-%m-%d')
-        text = f"User ID:- ```{message.from_user.id}```\nPlan :- {user}\nDaly Upload Limit :- {humanbytes(limit)}\nToday Used :- {humanbytes(used)}\nRemain:- {humanbytes(remain)}\n\nYour Plan Ends On :- {normal_date}"
+        text = f"User ID:- `{message.from_user.id}`\nPlan :- {user}\nDaly Upload Limit :- {humanbytes(limit)}\nToday Used :- {humanbytes(used)}\nRemain:- {humanbytes(remain)}\n\nYour Plan Ends On :- {normal_date}"
 
     if user == "Free":
         await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Upgrade 💰💳", callback_data="upgrade"), InlineKeyboardButton("Cancel ✖️ ", callback_data="cancel")]]))
