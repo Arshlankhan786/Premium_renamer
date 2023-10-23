@@ -5,16 +5,16 @@ from pyrogram import Client , filters
 @Client.on_callback_query(filters.regex('upgrade'))
 async def upgrade(bot,update):
 	text = """**Free Plan User**
-	Daily  Upload limit 20GB
+	Daily  Upload limit 2gb support 20GB
 	Price 0
 	
 	
 	**💫 Gold Tier 💫**
-	Daily Upload limit 50GB
+	Daily Upload limit 4gb support 50GB
 	Price Rs 10  ind /🌎 1$  per Month
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 100GB
+	Daily Upload limit 4gb+ support 100GB
 	Price Rs 20  ind /🌎 1$  per Month
 	
 	
@@ -31,16 +31,16 @@ async def upgrade(bot,update):
 @Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgradecm(bot,message):
 	text = """**Free Plan User**
-	Daily  Upload limit 1.2GB
+	Daily  Upload limit 2gb support 20GB
 	Price 0
 	
 	
 	**💫 Gold Tier 💫**
-	Daily Upload limit 50GB
+	Daily Upload limit 4gb support 50GB
 	Price Rs 10  ind /🌎 1$  per Month
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 100GB
+	Daily Upload limit 4gb+ support 100GB
 	Price Rs 20  ind /🌎 1$  per Month
 	
 	
